@@ -1,6 +1,6 @@
-# one-ai-website
+# selfwear-website
 
-Marketing website for [one-ai.fashion](https://one-ai.fashion) — presenting the **SELFWEAR Transformation** by ONE.
+Marketing website for [selfwear.co](https://selfwear.co) — presenting the **SELFWEAR Transformation**.
 
 ---
 
@@ -29,9 +29,7 @@ A single-page, infinite-scroll website built with pure HTML, CSS, and vanilla Ja
 | Primary red | `#E60005` |
 | Black | `#0a0a0a` |
 | Font | Montserrat (Google Fonts, weights 300–900) |
-| Logo | Inline SVG — ONE wordmark red |
-
-Logo SVG source: `Brand/logo/One/ONE_wordmark_red.svg`
+| Logo | Inline SVG — SELFWEAR wordmark, single-color red, set in the display font |
 
 ---
 
@@ -42,7 +40,7 @@ Logo SVG source: `Brand/logo/One/ONE_wordmark_red.svg`
 3. **Empathy Engine** — How SELFWEAR reads emotional signals
 4. **From Selfie to Shipment** — 4-step production flow
 5. **The Environment** — CO₂, waste, EU legislation, local manufacturing
-6. **Brands CTA** — Partner with ONE (coming soon)
+6. **Brands CTA** — Partner with SELFWEAR (coming soon)
 
 ---
 
@@ -73,5 +71,5 @@ python3 -m http.server 8080
 ## Content Source
 
 Narrative content sourced verbatim from the SELFWEAR Transformation brief. Additional brand context from Notion workspace pages:
-- *SELFWEAR — Powered by ONE AI*
+- *SELFWEAR — The Brand Transformation*
 - *The Future of Footwear with SELFWEAR™*
