@@ -162,6 +162,8 @@ tr.us td small{font-weight:300}
 .field{margin-top:22px}
 .field label{display:flex;justify-content:space-between;font-family:'Archivo',sans-serif;font-size:11px;letter-spacing:0.18em;text-transform:uppercase;font-weight:700}
 .field label output{color:var(--accent)}
+.subfield{margin:0 0 6px 32px}
+.field .note{margin-top:8px}
 .field input[type=range]{width:100%;margin-top:10px;accent-color:var(--accent)}
 .field input[type=number]{width:100%;margin-top:8px;padding:10px 12px;border:1px solid var(--ink);font:inherit;font-weight:400}
 details{margin-top:22px;border-top:1px solid var(--line);padding-top:14px}
@@ -446,6 +448,7 @@ summary{cursor:pointer;font-family:'Archivo',sans-serif;font-size:11px;letter-sp
         <label class="opt"><input type="checkbox" data-svc="1" checked><div><b>1 Website-in-a-Box</b><span>Storefront on your domain</span></div><div class="pp">EUR 1,000 setup<br>EUR 100 / month<br>no per-run fee</div></label>
         <label class="opt"><input type="checkbox" data-svc="2" checked><div><b>2 Body and Fit Profiling App</b><span>Fit profile per run</span></div><div class="pp">EUR 750 setup<br>EUR 60 / month<br>EUR 1 / run</div></label>
         <label class="opt"><input type="checkbox" data-svc="3"><div><b>3 Sales Engine API</b><span>Commission on each sale, rate to be set</span></div><div class="pp">EUR 1,500 setup<br>EUR 150 / month<br>2% / sale</div></label>
+        <div class="field subfield"><label for="saleValue">Average price of one sale (EUR)</label><input type="number" id="saleValue" min="0" step="any" value="100"><p class="note">The 2% commission applies to this price.</p></div>
         <label class="opt"><input type="checkbox" data-svc="4" checked><div><b>4 Production Engine API</b><span>Production file per run</span></div><div class="pp">EUR 2,250 setup<br>EUR 250 / month<br>EUR 18 / run</div></label>
         <label class="opt"><input type="checkbox" data-svc="5" checked><div><b>5 Order Control Center</b><span>Orders, exceptions, oversight</span></div><div class="pp">EUR 500 setup<br>EUR 50 / month<br>no per-run fee</div></label>
         <label class="opt"><input type="checkbox" data-svc="6" checked><div><b>6 Direct-to-Manufacturer Engine</b><span>Routing and fulfillment per run</span></div><div class="pp">EUR 500 setup<br>EUR 40 / month<br>EUR 1 / run</div></label>
@@ -453,13 +456,8 @@ summary{cursor:pointer;font-family:'Archivo',sans-serif;font-size:11px;letter-sp
         <div class="field">
           <label for="orders">Runs per month <output id="ordersOut">50</output></label>
           <input type="range" id="orders" min="10" max="2000" step="10" value="50">
+          <p class="note">A run is one made-to-order item, such as one insole.</p>
         </div>
-
-        <details>
-          <summary>Adjust assumptions</summary>
-          <div class="field"><label for="saleValue">Average price of one sale (EUR)</label><input type="number" id="saleValue" min="0" step="any" value="100"></div>
-          <p class="note" style="margin-top:12px">A run is one made-to-order item going through the chain, such as one insole or one garment. The calculator assumes one fit profile, one production file and one routed run for each run. The sales value only matters when service 3 is selected, which charges a commission of 2% on each sale.</p>
-        </details>
 
         <label class="opt" style="margin-top:22px;border-top:1px solid var(--line)"><input type="checkbox" id="annual"><div><b>Prepay annually</b><span>Further 10% off the monthly fee</span></div></label>
       </div>
