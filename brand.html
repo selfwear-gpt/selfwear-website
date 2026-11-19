@@ -192,7 +192,7 @@ summary{cursor:pointer;font-family:'Archivo',sans-serif;font-size:11px;letter-sp
 @media(max-width:520px){.steps{grid-template-columns:1fr}}
 
 /* two-server */
-.servers{display:grid;grid-template-columns:1fr minmax(230px,300px) 1fr;gap:0;align-items:stretch;margin-top:8px}
+.servers{display:grid;grid-template-columns:1fr minmax(300px,310px) 1fr;gap:0;align-items:stretch;margin-top:8px}
 .srv{border:1px solid var(--ink);background:#fff;padding:22px}
 .srv h4{font-family:'Archivo',sans-serif;font-weight:800;font-size:17px;margin-bottom:6px}
 .srv .tagline{font-size:12px;letter-spacing:0.14em;text-transform:uppercase;color:var(--muted);font-family:'Archivo',sans-serif;font-weight:700;margin-bottom:12px;display:block}
@@ -205,19 +205,19 @@ summary{cursor:pointer;font-family:'Archivo',sans-serif;font-size:11px;letter-sp
 .srv--prod .tagline{color:#bbb}
 .srv--prod .srv-sub{color:#fff}
 .srv--prod li{border-top-color:#333;color:#eee}
-.wire{display:flex;flex-direction:column;justify-content:center;gap:22px;padding:0 22px}
+.wire{display:flex;flex-direction:column;justify-content:center;gap:22px;padding:0 18px}
 .lane{border-top:3px solid var(--accent);padding-top:10px}
 .lane--back{border-top-color:var(--ink)}
 .lane-title{display:block;font-family:'Archivo',sans-serif;font-weight:800;font-size:12px;letter-spacing:0.16em;text-transform:uppercase;color:var(--ink)}
 .lane-row{display:flex;gap:12px;align-items:flex-start;margin-top:8px}
 .lane-row ul{list-style:none}
-.lane-row li{font-size:14px;line-height:1.4;padding:3px 0;color:#222}
+.lane-row li{font-size:14px;line-height:1.4;padding:3px 0;color:#222;white-space:nowrap}
 .ar{font-family:'Archivo Black',sans-serif;font-size:34px;line-height:1;color:var(--accent)}
 .lane--back .ar{color:var(--ink)}
 .ar-v{display:none}
 .never{margin-top:18px;border:1.5px solid var(--accent);background:#fff4f3;padding:14px 18px;font-size:14px;line-height:1.5}
 .never b{font-family:'Archivo',sans-serif;font-size:12px;letter-spacing:0.16em;text-transform:uppercase;color:var(--accent);margin-right:10px}
-@media(max-width:900px){.servers{grid-template-columns:1fr}.wire{padding:22px 0}.ar-h{display:none}.ar-v{display:inline}}
+@media(max-width:900px){.servers{grid-template-columns:1fr}.wire{padding:22px 0}.ar-h{display:none}.ar-v{display:inline}.lane-row li{white-space:normal}}
 
 
 /* sources */
@@ -684,7 +684,7 @@ summary{cursor:pointer;font-family:'Archivo',sans-serif;font-size:11px;letter-sp
         <div class="lane">
           <span class="lane-title">Sent to the SELFWEAR server</span>
           <div class="lane-row"><span class="ar ar-h" aria-hidden="true">&rarr;</span><span class="ar ar-v" aria-hidden="true">&darr;</span>
-            <ul><li>A job token</li><li>Visuals and parameters</li></ul></div>
+            <ul><li>Job token, visuals and parameters</li></ul></div>
         </div>
         <div class="lane lane--back">
           <span class="lane-title">Returned to you</span>
