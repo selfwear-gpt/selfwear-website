@@ -176,11 +176,11 @@ summary{cursor:pointer;font-family:'Archivo',sans-serif;font-size:11px;letter-sp
 .result p{font-size:12px;color:#aaa;margin-top:14px;line-height:1.5}
 .breakdown{margin-top:12px;font-size:13px;color:#ddd}
 .breakdown div{display:flex;justify-content:space-between;padding:6px 0;border-top:1px dashed #333}
-.bundle{margin-top:34px;display:grid;grid-template-columns:repeat(4,1fr);gap:0;border:1px solid var(--ink);background:#fff}
+.bundle{margin-top:34px;display:grid;grid-template-columns:repeat(3,1fr);gap:0;border:1px solid var(--ink);background:#fff}
 .bundle div{padding:18px;border-right:1px solid var(--line);font-size:14px;line-height:1.45}
 .bundle div:last-child{border-right:0}
 .bundle b{font-family:'Archivo Black',sans-serif;font-size:28px;letter-spacing:-0.03em;display:block;margin-bottom:4px}
-@media(max-width:760px){.bundle{grid-template-columns:1fr 1fr}.bundle div{border-bottom:1px solid var(--line)}}
+@media(max-width:760px){.bundle{grid-template-columns:1fr}.bundle div{border-bottom:1px solid var(--line)}}
 
 /* pilot */
 .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-top:40px}
@@ -370,159 +370,9 @@ summary{cursor:pointer;font-family:'Archivo',sans-serif;font-size:11px;letter-sp
       </ul>
       <div class="besides"><b>Beside the alternatives</b>Shopify and its theme stores are far larger, and if you already sell there you can keep that shop. We plan the fit and sales services as add-ons to existing shops, so ask about your setup. Choose this service when you want one storefront that carries made-to-fit products without a custom build.</div>
       <div class="price">
-        <div><div class="l">Setup</div><div class="v">EUR 1,500</div><div class="s">theme, branding, domain, launch</div></div>
-        <div><div class="l">Per month</div><div class="v">EUR 149</div><div class="s">hosting, updates, support</div></div>
-        <div><div class="l">Usage</div><div class="v">EUR 0.15</div><div class="s">per order</div></div>
-      </div>
-      <button class="btn btn--ghost btn--small addbtn" data-add="1">Add to my plan</button>
-    </div>
-  </div></div>
-</article>
-
-<!-- 2 -->
-<article class="service" id="svc-2">
-  <div class="shell"><div class="grid">
-    <div>
-      <div class="svc-num">2</div>
-      <div class="eyebrow svc-layer">Customer and brand front-end</div>
-      <h2>Body and Fit Profiling App</h2>
-      <p class="promise">Capture the body once, from a phone. Reuse the profile on every product.</p>
-      <span class="status live">Live for foot capture</span>
-      <p class="status-text">Body and garment capture are in development with design partners.</p>
-    </div>
-    <div>
-      <div class="body"><p>Customers capture visuals of themselves, as video or images, with a guided flow and a reference object for scale. No LiDAR, no scanner and no app install for the shopper. In production today this runs for custom insoles. The same flow is designed to collect reference garments, wearing shots and fit preferences at checkout, then fit feedback after delivery.</p></div>
-      <ul class="get">
-        <li>Guided phone capture that returns anatomical landmarks in millimetres, for the foot today.</li>
-        <li>A stored fit profile per customer, held on your server.</li>
-        <li>Explicit, separate consent for body data, with deletion built in.</li>
-        <li>Post-purchase feedback that flows back into the profile and the models.</li>
-      </ul>
-      <div class="besides"><b>Beside the alternatives</b>Size advisors such as True Fit, Fit Analytics, Kiwi Sizing and Mirrorsize pick one of your existing sizes. 3DLOOK measures bodies and also sells made-to-measure tools. SELFWEAR® stores the measurements, so service 4 can adjust the product itself. The established vendors hold far more purchase and return data than we do, and we do not claim better accuracy than they report.</div>
-      <div class="price">
-        <div><div class="l">Setup</div><div class="v">EUR 2,000</div><div class="s">capture flow, branding, consent text</div></div>
-        <div><div class="l">Per month</div><div class="v">EUR 199</div><div class="s">includes 300 profiles</div></div>
-        <div><div class="l">Usage</div><div class="v">EUR 0.25</div><div class="s">per extra profile</div></div>
-      </div>
-      <button class="btn btn--ghost btn--small addbtn" data-add="2">Add to my plan</button>
-    </div>
-  </div></div>
-</article>
-
-<!-- 3 -->
-<article class="service" id="svc-3">
-  <div class="shell"><div class="grid">
-    <div>
-      <div class="svc-num">3</div>
-      <div class="eyebrow svc-layer">Core intelligence and APIs</div>
-      <h2>Sales Engine API</h2>
-      <p class="promise">Sales-ready files from your specs, so you can sell a product before it exists.</p>
-      <span class="status build">Catalog ranking in a public demo</span>
-      <p class="status-text">Generating files from specs is in development. Terms for in-development services are set with each design partner.</p>
-    </div>
-    <div>
-      <div class="body"><p>You send brand specs and your existing catalog. The engine returns merchandising and sales-ready files that you can put in front of customers while production is still unreleased. Shoppers browse an endless feed, and the engine is designed to learn each person's taste within about five interactions, inside brand guardrails you set.</p></div>
-      <ul class="get">
-        <li>Catalog mode re-ranks your existing range per shopper. Try the demo at sales-engine.one-ai.fashion.</li>
-        <li>Brand guardrails keep every output on-brand.</li>
-        <li>Garments are ranked, and people are not profiled. Data stays in the browser and only aggregate counters leave it.</li>
-        <li>We prove uplift with a holdout test before any performance fee is discussed.</li>
-      </ul>
-      <div class="besides"><b>Beside the alternatives</b>In our review of public pages in November 2026 we found no tool that turns brand specs into sales-ready files and ranks them per shopper in one step. Adjacent tools cover visuals (Unmade, Kleiders) or product data (PIM suites). Browzwear and CLO serve design teams in 3D.</div>
-      <div class="price">
-        <div><div class="l">Setup</div><div class="v">EUR 1,500</div><div class="s">spec and catalog ingest</div></div>
-        <div><div class="l">Per month</div><div class="v">EUR 199</div><div class="s">includes 100 styles</div></div>
-        <div><div class="l">Usage</div><div class="v">EUR 1.50</div><div class="s">per extra style</div></div>
-      </div>
-      <button class="btn btn--ghost btn--small addbtn" data-add="3">Add to my plan</button>
-    </div>
-  </div></div>
-</article>
-
-<!-- 4 -->
-<article class="service" id="svc-4">
-  <div class="shell"><div class="grid">
-    <div>
-      <div class="svc-num">4</div>
-      <div class="eyebrow svc-layer">Core intelligence and APIs</div>
-      <h2>Production Engine API</h2>
-      <p class="promise">Fit data goes in. Machine-ready files come out.</p>
-      <span class="status live">Live for custom insoles</span>
-      <p class="status-text">Garment patterns and tech packs are in development. Terms for in-development services are set with each design partner.</p>
-    </div>
-    <div>
-      <div class="body"><p>Customer measurements and fit metadata arrive as an API call. The engine builds a parametric model and returns production files: print-ready G-code for insoles today, and CAD, tech packs and cutting patterns as the garment modules mature. A typical style goes through three to five physical sample rounds before release,<sup><a href="#s11">11</a></sup> and this service targets that loop.</p></div>
-      <ul class="get">
-        <li>Parametric model per customer, generated from the fit profile.</li>
-        <li>Output for your factory or a partner, in the format that machine reads.</li>
-        <li>Fit outcomes feed back to retrain the model, so the next order starts better.</li>
-        <li>Every job carries a job token, so a file can be traced from request to delivery.</li>
-      </ul>
-      <div class="besides"><b>Beside the alternatives</b>Tukatech and Lectra run mature pattern and cutting automation with named customers, and Fitdex and Kleiders offer pattern generation by API. CLO and Browzwear are design tools. We found no vendor that starts from anatomical capture and carries it into patterns and a matched factory under one API. That means not found in public pages, and enterprise deals may be missing from our view.</div>
-      <div class="price">
-        <div><div class="l">Setup</div><div class="v">EUR 4,000</div><div class="s">model fitting to your product</div></div>
-        <div><div class="l">Per month</div><div class="v">EUR 299</div><div class="s">includes 5 styles</div></div>
-        <div><div class="l">Usage</div><div class="v">EUR 50</div><div class="s">per extra style</div></div>
-      </div>
-      <button class="btn btn--ghost btn--small addbtn" data-add="4">Add to my plan</button>
-    </div>
-  </div></div>
-</article>
-
-<!-- 5 -->
-<article class="service" id="svc-5">
-  <div class="shell"><div class="grid">
-    <div>
-      <div class="svc-num">5</div>
-      <div class="eyebrow svc-layer">Operations and fulfillment</div>
-      <h2>Order Control Center</h2>
-      <p class="promise">One screen for every order, from checkout to doorstep.</p>
-      <span class="status build">In build</span>
-      <p class="status-text">Based on the admin dashboards we run for current partners. Terms for in-development services are set with each design partner.</p>
-    </div>
-    <div>
-      <div class="body"><p>Made-to-order adds production steps, and each step is a place where an order can stall. The Control Center shows every order with its fit data, production file and factory status attached, and it flags exceptions before the customer writes in. One carrier-software vendor reports that up to 11% of packages hit some kind of exception.<sup><a href="#s10">10</a></sup></p></div>
-      <ul class="get">
-        <li>Real-time tracking across checkout, production and delivery.</li>
-        <li>Exception queue with the order's full context beside it.</li>
-        <li>Role-based access with Google sign-in.</li>
-        <li>Operational oversight for your team, in your branding.</li>
-      </ul>
-      <div class="besides"><b>Beside the alternatives</b>Cin7, Linnworks and Brightpearl are mature for stock, warehouses and carriers. They manage existing inventory, and none of the pages we read attach per-customer fit data to an order. Unmade is the closest comparable for made-to-order flow.</div>
-      <div class="price">
-        <div><div class="l">Setup</div><div class="v">EUR 1,000</div><div class="s">roles, branding, integrations</div></div>
-        <div><div class="l">Per month</div><div class="v">EUR 199</div><div class="s">includes 500 orders</div></div>
-        <div><div class="l">Usage</div><div class="v">EUR 0.25</div><div class="s">per extra order</div></div>
-      </div>
-      <button class="btn btn--ghost btn--small addbtn" data-add="5">Add to my plan</button>
-    </div>
-  </div></div>
-</article>
-
-<!-- 6 -->
-<article class="service" id="svc-6">
-  <div class="shell"><div class="grid">
-    <div>
-      <div class="svc-num">6</div>
-      <div class="eyebrow svc-layer">Operations and fulfillment</div>
-      <h2>Direct-to-Manufacturer Engine</h2>
-      <p class="promise">Send each production file to a factory that can make it, and start fulfillment automatically.</p>
-      <span class="status build">In build</span>
-      <p class="status-text">Routing files to a brand's own manufacturing partners is part of every SELFWEAR® agreement today. Vetted partner capacity is added per project.</p>
-    </div>
-    <div>
-      <div class="body"><p>The engine matches a production file to a vetted factory by capability and capacity, then triggers fulfillment. Small orders are the point. Reported apparel minimums have been 250 to 700 pieces per colour,<sup><a href="#s9">9</a></sup> which pushes small brands toward guessing volumes. File-by-file routing removes the guess.</p></div>
-      <ul class="get">
-        <li>Capability and capacity matching, per file.</li>
-        <li>Bring your own factories. We onboard them and keep the file hand-over auditable.</li>
-        <li>Automated fulfillment trigger with status reported to the Control Center (5).</li>
-        <li>Traceable production records, which also prepare you for the textile Digital Product Passport.</li>
-      </ul>
-      <div class="besides"><b>Beside the alternatives</b>Maker's Row, Fashinza and Sourcing Playground are sourcing marketplaces with supplier networks we would have to build or partner for. Printful and Printify cover print on demand only. Unmade routes designed products to machines and factories, from designs rather than anatomy.</div>
-      <div class="price">
-        <div><div class="l">Setup</div><div class="v">EUR 2,000</div><div class="s">factory onboarding, file formats</div></div>
-        <div><div class="l">Per month</div><div class="v">EUR 199</div><div class="s">platform fee</div></div>
-        <div><div class="l">Usage</div><div class="v">1.5%</div><div class="s">of matched factory order value</div></div>
+        <div><div class="l">Setup</div><div class="v">EUR 500</div><div class="s">factory onboarding, file formats</div></div>
+        <div><div class="l">Per month</div><div class="v">EUR 40</div><div class="s">platform fee</div></div>
+        <div><div class="l">Per run</div><div class="v">EUR 5</div><div class="s">per routed run</div></div>
       </div>
       <button class="btn btn--ghost btn--small addbtn" data-add="6">Add to my plan</button>
     </div>
@@ -568,12 +418,12 @@ summary{cursor:pointer;font-family:'Archivo',sans-serif;font-size:11px;letter-sp
       <table>
         <thead><tr><th style="width:24%">Service</th><th>Published reference</th><th style="width:22%">SELFWEAR® proposed</th></tr></thead>
         <tbody>
-          <tr><td>1 Storefront</td><td>Shopify Basic EUR 24 to Advanced EUR 289 per month billed yearly. Shopify Plus from EUR 2,100 per month.</td><td>EUR 1,500 setup, EUR 149 per month</td></tr>
-          <tr><td>2 Fit profiling</td><td>Kiwi Sizing USD 7.99 to 726.99 per month by plan and order volume. Mirrorsize USD 249 or 499 per month. 3DLOOK Mobile Tailor USD 499 or 999 per month. True Fit not public.</td><td>EUR 2,000 setup, EUR 199 per month</td></tr>
-          <tr><td>3 Sales files</td><td>Kleiders Studio USD 339 per month with API, an adjacent tool. PIM suites USD 500 to 2,000 per month (vendor estimate).</td><td>EUR 1,500 setup, EUR 199 per month</td></tr>
-          <tr><td>4 Fit to patterns</td><td>Browzwear Teams USD 3,950 per user per year. Outsourced tech packs USD 100 to 500 per style (third-party estimate). Tukatech and Lectra not public.</td><td>EUR 4,000 setup, EUR 299 per month</td></tr>
-          <tr><td>5 Orders</td><td>Cin7 Core USD 349 to 1,199 per month. Linnworks by quote.</td><td>EUR 1,000 setup, EUR 199 per month</td></tr>
-          <tr><td>6 Factory match</td><td>Maker's Row USD 0 to 599 per month. Fashinza and Sourcing Playground not public.</td><td>EUR 2,000 setup, EUR 199 per month plus 1.5%</td></tr>
+          <tr><td>1 Storefront</td><td>Shopify Basic EUR 24 to Advanced EUR 289 per month billed yearly. Shopify Plus from EUR 2,100 per month.</td><td>EUR 1,000 setup, EUR 100 per month</td></tr>
+          <tr><td>2 Fit profiling</td><td>Kiwi Sizing USD 7.99 to 726.99 per month by plan and order volume. Mirrorsize USD 249 or 499 per month. 3DLOOK Mobile Tailor USD 499 or 999 per month. True Fit not public.</td><td>EUR 750 setup, EUR 60 per month, EUR 2 per run</td></tr>
+          <tr><td>3 Sales files</td><td>Kleiders Studio USD 339 per month with API, an adjacent tool. PIM suites USD 500 to 2,000 per month (vendor estimate).</td><td>EUR 1,500 setup, EUR 150 per month, terms to be set</td></tr>
+          <tr><td>4 Fit to patterns</td><td>Browzwear Teams USD 3,950 per user per year. Outsourced tech packs USD 100 to 500 per style (third-party estimate). Tukatech and Lectra not public.</td><td>EUR 2,250 setup, EUR 250 per month, EUR 13 per run</td></tr>
+          <tr><td>5 Orders</td><td>Cin7 Core USD 349 to 1,199 per month. Linnworks by quote.</td><td>EUR 500 setup, EUR 50 per month</td></tr>
+          <tr><td>6 Factory match</td><td>Maker's Row USD 0 to 599 per month. Fashinza and Sourcing Playground not public.</td><td>EUR 500 setup, EUR 40 per month, EUR 5 per run</td></tr>
         </tbody>
       </table>
     </div>
@@ -588,29 +438,27 @@ summary{cursor:pointer;font-family:'Archivo',sans-serif;font-size:11px;letter-sp
         <div class="eyebrow">Pricing</div>
         <h2 class="display">Pick what you need. Price it yourself.</h2>
       </div>
-      <p class="lede">Each service has a one-off setup, a monthly fee with included volume, and a usage charge beyond it. Combine services and the monthly fee drops. All prices are net, in euro, excluding VAT.</p>
+      <p class="lede">Each service has three fees: a one-off setup, a monthly fee and a fee per run. A run is one made-to-order item, such as one insole. All prices are net, in euro, excluding VAT.</p>
     </div>
 
     <div class="calc">
       <div class="panel">
-        <label class="opt"><input type="checkbox" data-svc="1" checked><div><b>1 Website-in-a-Box</b><span>Storefront on your domain</span></div><div class="pp">1,500 setup<br>149 / month</div></label>
-        <label class="opt"><input type="checkbox" data-svc="2" checked><div><b>2 Body and Fit Profiling App</b><span>300 profiles included</span></div><div class="pp">2,000 setup<br>199 / month</div></label>
-        <label class="opt"><input type="checkbox" data-svc="3"><div><b>3 Sales Engine API</b><span>100 styles included</span></div><div class="pp">1,500 setup<br>199 / month</div></label>
-        <label class="opt"><input type="checkbox" data-svc="4"><div><b>4 Production Engine API</b><span>5 styles included</span></div><div class="pp">4,000 setup<br>299 / month</div></label>
-        <label class="opt"><input type="checkbox" data-svc="5" checked><div><b>5 Order Control Center</b><span>500 orders included</span></div><div class="pp">1,000 setup<br>199 / month</div></label>
-        <label class="opt"><input type="checkbox" data-svc="6"><div><b>6 Direct-to-Manufacturer Engine</b><span>1.5% of matched factory order value</span></div><div class="pp">2,000 setup<br>199 / month</div></label>
+        <label class="opt"><input type="checkbox" data-svc="1" checked><div><b>1 Website-in-a-Box</b><span>Storefront on your domain</span></div><div class="pp">1,000 setup<br>100 / month<br>no per-run fee</div></label>
+        <label class="opt"><input type="checkbox" data-svc="2" checked><div><b>2 Body and Fit Profiling App</b><span>Fit profile per run</span></div><div class="pp">750 setup<br>60 / month<br>2 / run</div></label>
+        <label class="opt"><input type="checkbox" data-svc="3"><div><b>3 Sales Engine API</b><span>100 styles included, terms to be set</span></div><div class="pp">1,500 setup<br>150 / month<br>2 / extra style</div></label>
+        <label class="opt"><input type="checkbox" data-svc="4" checked><div><b>4 Production Engine API</b><span>Production file per run</span></div><div class="pp">2,250 setup<br>250 / month<br>13 / run</div></label>
+        <label class="opt"><input type="checkbox" data-svc="5" checked><div><b>5 Order Control Center</b><span>Orders, exceptions, oversight</span></div><div class="pp">500 setup<br>50 / month<br>no per-run fee</div></label>
+        <label class="opt"><input type="checkbox" data-svc="6" checked><div><b>6 Direct-to-Manufacturer Engine</b><span>Routing and fulfillment per run</span></div><div class="pp">500 setup<br>40 / month<br>5 / run</div></label>
 
         <div class="field">
-          <label for="orders">Orders per month <output id="ordersOut">500</output></label>
-          <input type="range" id="orders" min="50" max="5000" step="50" value="500">
+          <label for="orders">Runs per month <output id="ordersOut">50</output></label>
+          <input type="range" id="orders" min="10" max="2000" step="10" value="50">
         </div>
 
         <details>
           <summary>Adjust assumptions</summary>
           <div class="field"><label for="catStyles">New styles in the sales engine per month</label><input type="number" id="catStyles" min="0" value="40"></div>
-          <div class="field"><label for="prodStyles">Styles into production per month</label><input type="number" id="prodStyles" min="0" value="10"></div>
-          <div class="field"><label for="itemCost">Average factory cost per item (EUR)</label><input type="number" id="itemCost" min="0" value="40"></div>
-          <p class="note" style="margin-top:12px">The calculator assumes one fit profile per order and that every order is produced through the Direct-to-Manufacturer Engine when service 6 is selected.</p>
+          <p class="note" style="margin-top:12px">A run is one made-to-order item going through the chain, such as one insole or one garment. The calculator assumes one fit profile, one production file and one routed run for each run. The sales engine setting only matters when service 3 is selected.</p>
         </details>
 
         <label class="opt" style="margin-top:22px;border-top:1px solid var(--line)"><input type="checkbox" id="annual"><div><b>Prepay annually</b><span>Further 10% off the monthly fee</span></div></label>
@@ -624,7 +472,7 @@ summary{cursor:pointer;font-family:'Archivo',sans-serif;font-size:11px;letter-sp
           <div class="label">per month</div>
           <div id="resTag"></div>
           <div class="row"><span>Setup, one-off</span><b id="resSetup">EUR 0</b></div>
-          <div class="row"><span>Effective cost per order</span><b id="resPer">EUR 0</b></div>
+          <div class="row"><span>Effective cost per run</span><b id="resPer">EUR 0</b></div>
           <div class="row"><span>List price per month</span><b id="resList">EUR 0</b></div>
           <div class="breakdown" id="resBreak"></div>
           <p>Proposed prices for discussion, rounded and excluding VAT. Services in development carry design-partner terms that we agree with you directly.</p>
@@ -643,18 +491,17 @@ summary{cursor:pointer;font-family:'Archivo',sans-serif;font-size:11px;letter-sp
     </div>
 
     <div class="bundle">
-      <div><b>10%</b>off the monthly fee when you take 2 services</div>
-      <div><b>15%</b>off when you take 3 or 4 services</div>
-      <div><b>20%</b>off when you take 5 or 6 services</div>
-      <div><b>50%</b>off combined setup from 3 services, because the integration work is shared</div>
+      <div><b>Setup</b>one-off, for the configuration work: branding, model fitting, integrations</div>
+      <div><b>Monthly</b>runs the service whether you make one item or a thousand</div>
+      <div><b>Per run</b>charged for each made-to-order item that goes through the chain</div>
     </div>
     <div class="logic">
-      <div><b>Commodity services cost less than the tools they resemble.</b> Shopify Advanced is EUR 289 a month on a yearly plan and Cin7 Core Standard is USD 349. Storefront and order control are priced below both, because that is not where we differ.</div>
-      <div><b>Fit carries the weight.</b> Fit profiling and fit to patterns make up about 42% of the list price for the reference brand, up from about 27%, because we found no vendor that connects them.</div>
-      <div><b>Part of the bill moves with your volume.</b> A brand with 100 orders a month taking services 1, 2 and 5 pays about EUR 478 per month. At 500 orders the same three services cost about EUR 571.</div>
-      <div><b>Setup follows the configuration work.</b> The Production Engine setup is EUR 4,000 because the model is fitted to your product. Order control setup is EUR 1,000.</div>
+      <div><b>Storefront and order control stay flat.</b> They cost EUR 100 and EUR 50 a month with no per-run fee. Shopify's yearly plans run from EUR 24 to 289 a month and Cin7 Core starts at USD 349.</div>
+      <div><b>Fit profiling is cheap to start and grows with use.</b> At 50 runs a month it costs EUR 160, against USD 249 for 100 scans at Mirrorsize and USD 499 for 3DLOOK Mobile Tailor. Each extra run adds EUR 2.</div>
+      <div><b>The production file is the core.</b> It is EUR 900 of the EUR 1,500 monthly bill at 50 runs, and EUR 2,250 of the EUR 5,000 setup. It turns fit data into a file a factory can make from.</div>
+      <div><b>Factory routing follows the same pattern as fit profiling.</b> A low monthly fee of EUR 40 and EUR 5 for each run, with a higher setup of EUR 500 for onboarding your factories.</div>
     </div>
-    <p class="note" style="margin-top:14px">Worked example: a brand with 500 orders a month, 40 catalog styles and 10 styles into production, taking all six services, pays about EUR 1,919 per month at list and about EUR 1,535 after the bundle discount. Setup drops from EUR 12,000 to EUR 6,000. That is about EUR 3.07 per order, so check it against your own margin before you commit.</p>
+    <p class="note" style="margin-top:14px">Worked example: a brand making 50 items a month with services 1, 2, 4, 5 and 6 pays EUR 500 a month plus EUR 20 per run. That is EUR 1,500 a month, with EUR 5,000 setup, or EUR 30 per run all in. Service 3 is priced separately and its terms are still to be set.</p>
   </div>
 </section>
 
@@ -797,7 +644,6 @@ summary{cursor:pointer;font-family:'Archivo',sans-serif;font-size:11px;letter-sp
   'use strict';
 
   var fmt = new Intl.NumberFormat('en-IE', { style: 'currency', currency: 'EUR', currencyDisplay: 'code', maximumFractionDigits: 0 });
-  var fmt2 = new Intl.NumberFormat('en-IE', { style: 'currency', currency: 'EUR', currencyDisplay: 'code', minimumFractionDigits: 2, maximumFractionDigits: 2 });
 
   var NAMES = {
     1: 'Website-in-a-Box',
@@ -808,14 +654,15 @@ summary{cursor:pointer;font-family:'Archivo',sans-serif;font-size:11px;letter-sp
     6: 'Direct-to-Manufacturer Engine'
   };
 
-  // Proposed prices. Usage is the monthly charge beyond the included volume.
+  // Proposed prices. Three fees per service: setup, monthly and per run.
+  // A run is one made-to-order item. Service 3 is a placeholder: 100 styles included, per extra style.
   var SERVICES = {
-    1: { setup: 1500, monthly: 149, usage: function (a) { return 0.15 * a.orders; } },
-    2: { setup: 2000, monthly: 199, usage: function (a) { return Math.max(0, a.orders - 300) * 0.25; } },
-    3: { setup: 1500, monthly: 199, usage: function (a) { return Math.max(0, a.catStyles - 100) * 1.50; } },
-    4: { setup: 4000, monthly: 299, usage: function (a) { return Math.max(0, a.prodStyles - 5) * 50; } },
-    5: { setup: 1000, monthly: 199, usage: function (a) { return Math.max(0, a.orders - 500) * 0.25; } },
-    6: { setup: 2000, monthly: 199, usage: function (a) { return 0.015 * a.orders * a.itemCost; } }
+    1: { setup: 1000, monthly: 100, run: function (a) { return 0; } },
+    2: { setup: 750,  monthly: 60,  run: function (a) { return 2 * a.runs; } },
+    3: { setup: 1500, monthly: 150, run: function (a) { return Math.max(0, a.catStyles - 100) * 2; } },
+    4: { setup: 2250, monthly: 250, run: function (a) { return 13 * a.runs; } },
+    5: { setup: 500,  monthly: 50,  run: function (a) { return 0; } },
+    6: { setup: 500,  monthly: 40,  run: function (a) { return 5 * a.runs; } }
   };
 
   function $(id) { return document.getElementById(id); }
@@ -831,25 +678,16 @@ summary{cursor:pointer;font-family:'Archivo',sans-serif;font-size:11px;letter-sp
     return boxes.filter(function (b) { return b.checked; }).map(function (b) { return b.getAttribute('data-svc'); });
   }
 
-  function monthlyDiscount(n) {
-    if (n >= 5) return 0.20;
-    if (n >= 3) return 0.15;
-    if (n === 2) return 0.10;
-    return 0;
-  }
-
   var last = null;
   var QUOTE_CC = 'hello@selfwear.co';
 
   function render() {
     var ids = selected();
     var a = {
-      orders: num($('orders'), 500),
-      catStyles: num($('catStyles'), 40),
-      prodStyles: num($('prodStyles'), 10),
-      itemCost: num($('itemCost'), 40)
+      runs: num($('orders'), 50),
+      catStyles: num($('catStyles'), 40)
     };
-    $('ordersOut').textContent = a.orders.toLocaleString('en-IE');
+    $('ordersOut').textContent = a.runs.toLocaleString('en-IE');
 
     addBtns.forEach(function (btn) {
       var on = ids.indexOf(btn.getAttribute('data-add')) !== -1;
@@ -869,30 +707,28 @@ summary{cursor:pointer;font-family:'Archivo',sans-serif;font-size:11px;letter-sp
     var listMonthly = 0, listSetup = 0, rows = [];
     ids.forEach(function (id) {
       var s = SERVICES[id];
-      var m = s.monthly + s.usage(a);
+      var m = s.monthly + s.run(a);
       listMonthly += m;
       listSetup += s.setup;
       rows.push([NAMES[id], m]);
     });
 
-    var n = ids.length;
-    var d = monthlyDiscount(n);
-    var monthly = listMonthly * (1 - d);
+    var d = 0;
+    var monthly = listMonthly;
     var annual = $('annual').checked;
     if (annual) monthly = monthly * 0.9;
-    var setup = n >= 3 ? listSetup * 0.5 : listSetup;
+    var setup = listSetup;
 
     $('resMonthly').textContent = fmt.format(monthly);
     $('resSetup').innerHTML = (setup !== listSetup ? '<span class="strike">' + fmt.format(listSetup) + '</span>' : '') + fmt.format(setup);
-    $('resPer').textContent = fmt2.format(monthly / Math.max(1, a.orders));
+    $('resPer').textContent = fmt.format(monthly / Math.max(1, a.runs));
     $('resList').textContent = fmt.format(listMonthly);
 
     var tags = [];
-    if (d > 0) tags.push(Math.round(d * 100) + '% bundle discount');
     if (annual) tags.push('annual prepay');
     $('resTag').innerHTML = tags.length ? '<span class="tag">' + tags.join(' + ') + '</span>' : '';
 
-    last = { ids: ids, a: a, rows: rows, listMonthly: listMonthly, listSetup: listSetup, monthly: monthly, setup: setup, d: d, annual: annual, perOrder: monthly / Math.max(1, a.orders) };
+    last = { ids: ids, a: a, rows: rows, listMonthly: listMonthly, listSetup: listSetup, monthly: monthly, setup: setup, d: d, annual: annual, perRun: monthly / Math.max(1, a.runs) };
 
     $('resBreak').innerHTML = rows.map(function (r) {
       return '<div><span>' + r[0] + '</span><span>' + fmt.format(r[1]) + '</span></div>';
@@ -907,18 +743,15 @@ summary{cursor:pointer;font-family:'Archivo',sans-serif;font-size:11px;letter-sp
     q.rows.forEach(function (r) { L.push('- ' + r[0] + ': ' + fmt.format(r[1]) + ' per month at list'); });
     L.push('');
     L.push('Assumptions');
-    L.push('- Orders per month: ' + q.a.orders);
+    L.push('- Runs per month: ' + q.a.runs);
     if (q.ids.indexOf('3') !== -1) L.push('- New styles in the sales engine per month: ' + q.a.catStyles);
-    if (q.ids.indexOf('4') !== -1) L.push('- Styles into production per month: ' + q.a.prodStyles);
-    if (q.ids.indexOf('6') !== -1) L.push('- Average factory cost per item: ' + fmt.format(q.a.itemCost));
     L.push('- Annual prepay: ' + (q.annual ? 'yes' : 'no'));
     L.push('');
     L.push('Estimate');
     L.push('- List price per month: ' + fmt.format(q.listMonthly));
-    if (q.d > 0) L.push('- Bundle discount: ' + Math.round(q.d * 100) + '%');
-    L.push('- Monthly fee: ' + fmt.format(q.monthly));
-    L.push('- Setup, one-off: ' + fmt.format(q.setup) + (q.setup !== q.listSetup ? ' (list ' + fmt.format(q.listSetup) + ')' : ''));
-    L.push('- Effective cost per order: ' + fmt2.format(q.perOrder));
+    L.push('- Monthly total' + (q.annual ? ' with annual prepay' : '') + ': ' + fmt.format(q.monthly));
+    L.push('- Setup, one-off: ' + fmt.format(q.setup));
+    L.push('- Effective cost per run: ' + fmt.format(q.perRun));
     L.push('');
     L.push('Proposed prices for discussion, net, excluding VAT.');
     return L.join('\r\n');
@@ -955,7 +788,7 @@ summary{cursor:pointer;font-family:'Archivo',sans-serif;font-size:11px;letter-sp
   });
 
   boxes.forEach(function (b) { b.addEventListener('change', render); });
-  ['orders', 'catStyles', 'prodStyles', 'itemCost', 'annual'].forEach(function (id) {
+  ['orders', 'catStyles', 'annual'].forEach(function (id) {
     $(id).addEventListener('input', render);
     $(id).addEventListener('change', render);
   });
