@@ -457,7 +457,7 @@ summary{cursor:pointer;font-family:'Archivo',sans-serif;font-size:11px;letter-sp
 
         <details>
           <summary>Adjust assumptions</summary>
-          <div class="field"><label for="saleValue">Average sale value in EUR, for the sales engine commission</label><input type="number" id="saleValue" min="0" value="100"></div>
+          <div class="field"><label for="saleValue">Average price of one sale (EUR)</label><input type="number" id="saleValue" min="0" step="any" value="100"></div>
           <p class="note" style="margin-top:12px">A run is one made-to-order item going through the chain, such as one insole or one garment. The calculator assumes one fit profile, one production file and one routed run for each run. The sales value only matters when service 3 is selected, which charges a commission of 2% on each sale.</p>
         </details>
 
@@ -685,7 +685,7 @@ summary{cursor:pointer;font-family:'Archivo',sans-serif;font-size:11px;letter-sp
     var ids = selected();
     var a = {
       runs: num($('orders'), 50),
-      saleValue: num($('saleValue'), 100)
+      saleValue: num($('saleValue'), 0)
     };
     $('ordersOut').textContent = a.runs.toLocaleString('en-IE');
 
