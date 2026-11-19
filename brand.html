@@ -43,8 +43,6 @@ sup a{color:var(--accent);font-weight:600;font-size:0.75em;padding-left:1px}
 .note{font-size:13px;color:var(--muted);line-height:1.5}
 
 /* draft banner */
-#draft-banner{background:var(--ink);color:#fff;font-size:13px;padding:10px 40px;text-align:center;font-weight:400}
-#draft-banner b{font-weight:700;color:#ffb3ae}
 
 /* nav */
 .nav{position:sticky;top:0;z-index:50;background:rgba(255,255,255,0.93);backdrop-filter:saturate(140%) blur(10px);border-bottom:1px solid var(--line)}
@@ -67,10 +65,10 @@ sup a{color:var(--accent);font-weight:600;font-size:0.75em;padding-left:1px}
 .hero h1 span{color:var(--accent)}
 .hero-cta{display:flex;gap:14px;flex-wrap:wrap;margin-top:34px}
 .facts{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-top:64px;border-top:1px solid var(--ink)}
-.fact{padding:22px 22px 8px 0;border-right:1px solid var(--line)}
+.fact{padding:22px 22px 14px;border-right:1px solid var(--line);text-align:center}
 .fact:last-child{border-right:0}
 .fact b{font-family:'Archivo Black',sans-serif;font-weight:900;font-size:clamp(30px,3.6vw,50px);letter-spacing:-0.03em;display:block;line-height:1}
-.fact span{display:block;margin-top:10px;font-size:14px;line-height:1.4;color:#333;max-width:26ch}
+.fact span{display:block;margin-top:10px;font-size:14px;line-height:1.4;color:#333;max-width:26ch;margin-left:auto;margin-right:auto}
 .fact em{display:block;font-style:normal;font-size:12px;color:var(--muted);margin-top:6px}
 @media(max-width:900px){.facts{grid-template-columns:1fr 1fr}.fact{border-bottom:1px solid var(--line)}}
 @media(max-width:520px){.facts{grid-template-columns:1fr}.fact{border-right:0}}
@@ -246,11 +244,10 @@ footer a{color:#ccc;text-decoration:underline}
 <body>
 
 <!-- Remove this banner before publishing -->
-<div id="draft-banner"><b>Draft for review.</b> Prices are proposals and product statuses are to be confirmed before this page goes live.</div>
 
 <header class="nav">
   <div class="shell">
-    <a href="#top" class="logo">SELFWEAR<small>®</small></a>
+    <a href="/" class="logo" aria-label="SELFWEAR home">SELFWEAR<small>®</small></a>
     <ul>
       <li><a href="#services">Services</a></li>
       <li><a href="#compare">How we compare</a></li>
@@ -536,7 +533,7 @@ footer a{color:#ccc;text-decoration:underline}
     <div class="tablewrap">
       <table>
         <thead><tr>
-          <th>Who</th><th class="c">1 Storefront</th><th class="c">2 Fit profiling</th><th class="c">3 Sales files</th><th class="c">4 Fit to patterns</th><th class="c">5 Orders</th><th class="c">6 Factory match</th>
+          <th>Who</th><th class="c">1<br>Storefront</th><th class="c">2<br>Fit profiling</th><th class="c">3<br>Sales files</th><th class="c">4<br>Fit to patterns</th><th class="c">5<br>Orders</th><th class="c">6<br>Factory match</th>
         </tr></thead>
         <tbody>
           <tr><td>Shopify and theme stores<small>Storefront platform</small></td><td class="c y">Yes</td><td class="c n0">none</td><td class="c n0">none</td><td class="c n0">none</td><td class="c p">Part</td><td class="c n0">none</td></tr>
@@ -546,7 +543,7 @@ footer a{color:#ccc;text-decoration:underline}
           <tr><td>Order and inventory systems<small>Cin7, Linnworks, Brightpearl, Zoho</small></td><td class="c n0">none</td><td class="c n0">none</td><td class="c n0">none</td><td class="c n0">none</td><td class="c y">Yes</td><td class="c n0">none</td></tr>
           <tr><td>Factory marketplaces<small>Fashinza, Maker's Row, Sourcing Playground</small></td><td class="c n0">none</td><td class="c n0">none</td><td class="c n0">none</td><td class="c n0">none</td><td class="c n0">none</td><td class="c y">Yes</td></tr>
           <tr><td>Print on demand<small>Printful, Printify</small></td><td class="c p">Part</td><td class="c n0">none</td><td class="c n0">none</td><td class="c n0">none</td><td class="c y">Yes</td><td class="c p">Part</td></tr>
-          <tr class="us"><td>SELFWEAR®<small>All six offered as separate services. Delivery status is shown with each service above.</small></td><td class="c y">Yes</td><td class="c y">Yes</td><td class="c y">Yes</td><td class="c y">Yes</td><td class="c y">Yes</td><td class="c y">Yes</td></tr>
+          <tr class="us"><td>SELFWEAR®</td><td class="c y">Yes</td><td class="c y">Yes</td><td class="c y">Yes</td><td class="c y">Yes</td><td class="c y">Yes</td><td class="c y">Yes</td></tr>
         </tbody>
       </table>
     </div>
@@ -655,15 +652,15 @@ footer a{color:#ccc;text-decoration:underline}
     <div class="sec-head">
       <div>
         <div class="eyebrow">Data and updates</div>
-        <h2 class="display">Customer data stays on your server.</h2>
+        <h2 class="display">Names and contacts stay on your server.</h2>
       </div>
-      <p class="lede">Body measurements are sensitive. Under the GDPR, biometric data is special-category data when it is processed to identify a person, and explicit consent is the realistic route.<sup><a href="#s8">8</a></sup> We built the system around that.</p>
+      <p class="lede">Body measurements and photos are sensitive. Under the GDPR, biometric data is special-category data when it is processed to identify a person, and explicit consent is the realistic route.<sup><a href="#s8">8</a></sup> We built the system around that: the SELFWEAR server never receives names, contacts or addresses.</p>
     </div>
     <div class="servers">
       <div class="srv srv--brand">
         <span class="tagline">System A</span>
         <h4>Your brand server</h4>
-        <p class="srv-sub">Holds all customer data</p>
+        <p class="srv-sub">Holds the full customer record</p>
         <ul>
           <li>Names, contacts, addresses</li>
           <li>Photos and the stored fit profile</li>
@@ -675,7 +672,7 @@ footer a{color:#ccc;text-decoration:underline}
         <div class="lane">
           <span class="lane-title">Sent to production</span>
           <div class="lane-row"><span class="ar ar-h" aria-hidden="true">&rarr;</span><span class="ar ar-v" aria-hidden="true">&darr;</span>
-            <ul><li>Landmarks and product parameters</li><li>Fit feedback as scales</li><li>A job token</li></ul></div>
+            <ul><li>Photos</li><li>Landmarks and product parameters</li><li>Fit feedback as scales</li><li>A job token</li></ul></div>
         </div>
         <div class="lane lane--back">
           <span class="lane-title">Returned to you</span>
@@ -685,17 +682,17 @@ footer a{color:#ccc;text-decoration:underline}
       </div>
       <div class="srv srv--prod">
         <span class="tagline">System B, EU-hosted</span>
-        <h4>SELFWEAR® production server</h4>
-        <p class="srv-sub">Holds no customer data</p>
+        <h4>SELFWEAR® server</h4>
+        <p class="srv-sub">Holds no names, contacts or addresses</p>
         <ul>
-          <li>Receives landmarks and product parameters</li>
+          <li>Receives photos, landmarks and product parameters</li>
           <li>Builds the production file and returns it</li>
           <li>Matches feedback to jobs by token only</li>
-          <li>Keeps no names, contacts, photos or addresses</li>
+          <li>Keeps no names, contacts or addresses</li>
         </ul>
       </div>
     </div>
-    <div class="never"><b>Never crosses the line</b> Names, contacts, addresses, photos, payments and consent records stay on your server.</div>
+    <div class="never"><b>Never crosses the line</b> Names, contacts, addresses, payments and consent records stay on your server.</div>
     
 <div class="two" style="margin-top:44px">
       <div class="body"><p>Each service ships as its own container release. Deploys run through GitHub Actions with automated tests, a health check that must report the new version, and automatic rollback if it does not. A deploy key can run four actions only: deploy, platform sync, rollback and status.</p></div>
