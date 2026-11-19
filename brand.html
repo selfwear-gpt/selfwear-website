@@ -22,7 +22,7 @@
   --max:1200px;
 }
 *{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth;scroll-padding-top:76px}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
 html,body{background:var(--bg);color:var(--ink);font-family:'Inter',system-ui,sans-serif;font-weight:300;-webkit-font-smoothing:antialiased;line-height:1.55;overflow-x:clip}
 ::selection{background:var(--accent);color:#fff}
 a{color:inherit;text-decoration:none}
@@ -30,7 +30,7 @@ img,svg{max-width:100%}
 .shell{max-width:var(--max);margin:0 auto;padding:0 40px}
 
 /* type */
-.display{font-family:'Archivo Black','Archivo',sans-serif;font-weight:900;letter-spacing:-0.02em;line-height:0.95;text-transform:uppercase;color:var(--ink)}
+.display{font-family:'Archivo Black','Archivo',sans-serif;font-weight:900;letter-spacing:-0.02em;line-height:0.92;text-transform:uppercase;color:var(--ink)}
 .eyebrow{font-family:'Archivo',sans-serif;font-weight:700;font-size:12px;letter-spacing:0.22em;text-transform:uppercase;color:var(--accent)}
 .label{font-family:'Archivo',sans-serif;font-weight:600;font-size:11px;letter-spacing:0.22em;text-transform:uppercase}
 .label--muted{color:var(--muted)}
@@ -44,20 +44,31 @@ sup a{color:var(--accent);font-weight:600;font-size:0.75em;padding-left:1px}
 
 /* draft banner */
 
-/* nav */
-.nav{position:sticky;top:0;z-index:50;background:rgba(255,255,255,0.93);backdrop-filter:saturate(140%) blur(10px);border-bottom:1px solid var(--line)}
-.nav .shell{display:flex;align-items:center;justify-content:space-between;height:64px;gap:24px}
-.logo{font-family:'Archivo Black',sans-serif;font-size:22px;letter-spacing:-0.01em;text-transform:uppercase;color:var(--accent)}
-.logo small{font-size:11px;vertical-align:super;letter-spacing:0}
-.nav ul{display:flex;gap:28px;list-style:none}
-.nav ul a{font-family:'Archivo',sans-serif;font-size:12px;font-weight:600;letter-spacing:0.16em;text-transform:uppercase}
-.nav ul a:hover{color:var(--accent)}
-.btn{display:inline-block;font-family:'Archivo',sans-serif;font-weight:700;font-size:12px;letter-spacing:0.16em;text-transform:uppercase;padding:14px 22px;border:1.5px solid var(--ink);background:var(--ink);color:#fff;cursor:pointer;transition:.15s}
+/* nav (same as selfwear.co) */
+.nav{position:sticky;top:0;z-index:50;background:rgba(255,255,255,0.92);backdrop-filter:saturate(140%) blur(10px);border-bottom:1px solid var(--line)}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;height:72px}
+.mark{display:flex;align-items:center;gap:14px}
+.mark .logo-svg{height:24px;width:auto;display:block}
+.footer-mark{height:18px;width:auto;display:block;vertical-align:middle}
+.nav-links{display:flex;gap:36px}
+.nav-links a{font-family:'Archivo',sans-serif;font-weight:600;font-size:11px;letter-spacing:0.22em;text-transform:uppercase;color:var(--ink);padding:6px 0}
+.nav-links a:hover{color:var(--accent)}
+.nav-cta{font-family:'Archivo',sans-serif;font-weight:700;font-size:11px;letter-spacing:0.22em;text-transform:uppercase;border:1px solid var(--ink);padding:9px 16px;border-radius:999px;transition:all .2s ease;white-space:nowrap}
+.nav-cta:hover{background:var(--ink);color:#fff}
+/* buttons (same shape as the selfwear.co buttons) */
+.btn{font-family:'Archivo',sans-serif;font-weight:700;font-size:12px;letter-spacing:0.22em;text-transform:uppercase;padding:18px 28px;border-radius:999px;display:inline-flex;align-items:center;justify-content:center;gap:12px;transition:all .2s ease;border:1px solid var(--ink);background:var(--ink);color:#fff;cursor:pointer}
 .btn:hover{background:var(--accent);border-color:var(--accent)}
 .btn--ghost{background:transparent;color:var(--ink)}
 .btn--ghost:hover{background:var(--ink);border-color:var(--ink);color:#fff}
-.btn--small{padding:10px 14px;font-size:11px}
-@media(max-width:860px){.nav ul{display:none}.shell{padding:0 22px}#draft-banner{padding:10px 22px}}
+.btn--small{padding:9px 16px;font-size:11px}
+/* footer (same as selfwear.co) */
+footer{padding:48px 0 56px;color:var(--muted);font-size:12px;background:var(--bg)}
+footer .row{display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap}
+footer .sig{font-family:'Archivo',sans-serif;letter-spacing:0.04em}
+footer .sig em{font-style:normal;color:var(--ink)}
+footer .legal-link{font-family:'Archivo',sans-serif;font-weight:600;letter-spacing:0.22em;text-transform:uppercase;font-size:11px}
+footer .legal-link:hover{color:var(--accent)}
+@media(max-width:768px){.shell{padding:0 20px}.nav-inner{height:60px}.nav-links{display:none}.mark .logo-svg{height:20px}.nav-cta{padding:8px 14px;font-size:10px}footer{padding:36px 0 48px}footer .row{flex-direction:column;align-items:flex-start;gap:16px}}
 
 /* hero */
 .hero{padding:88px 0 72px;border-bottom:1px solid var(--line)}
@@ -220,9 +231,6 @@ summary{cursor:pointer;font-family:'Archivo',sans-serif;font-size:11px;letter-sp
 .contact .lede{color:#ddd}
 .contact .btn{background:var(--accent);border-color:var(--accent)}
 .contact .btn:hover{background:#fff;color:var(--ink);border-color:#fff}
-footer{background:#000;color:#999;padding:34px 0;font-size:13px}
-footer .shell{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
-footer a{color:#ccc;text-decoration:underline}
 
 .quote{margin-top:22px;border-top:1px solid #333;padding-top:18px}
 .quote input{display:block;width:100%;margin-top:10px;padding:11px 12px;border:1px solid #555;background:#111;color:#fff;font:inherit;font-weight:400}
@@ -246,15 +254,19 @@ footer a{color:#ccc;text-decoration:underline}
 <!-- Remove this banner before publishing -->
 
 <header class="nav">
-  <div class="shell">
-    <a href="/" class="logo" aria-label="SELFWEAR home">SELFWEAR<small>®</small></a>
-    <ul>
-      <li><a href="#services">Services</a></li>
-      <li><a href="#compare">How we compare</a></li>
-      <li><a href="#pricing">Pricing</a></li>
-      <li><a href="#pilot">Pilot</a></li>
-    </ul>
-    <a href="#pilot" class="btn btn--small">Start a pilot</a>
+  <div class="shell nav-inner">
+    <a class="mark" href="/" aria-label="SELFWEAR home">
+      <svg viewBox="0 0 316 40" xmlns="http://www.w3.org/2000/svg" class="logo-svg" role="img" aria-label="Selfwear">
+        <text x="0" y="31" font-family="'Archivo Black','Archivo',sans-serif" font-weight="900" font-size="34" letter-spacing="-0.5" fill="#E60005">SELFWEAR<tspan font-size="15" dy="-15" dx="2">&#174;</tspan></text>
+      </svg>
+    </a>
+    <nav class="nav-links">
+      <a href="#services">Services</a>
+      <a href="#compare">How we compare</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#pilot">Pilot</a>
+    </nav>
+    <a class="nav-cta" href="#pilot">Start a Pilot</a>
   </div>
 </header>
 
@@ -769,9 +781,14 @@ footer a{color:#ccc;text-decoration:underline}
 </main>
 
 <footer>
-  <div class="shell">
-    <span>SELFWEAR® · Venloer Straße 440, 50825 Köln</span>
-    <span><a href="https://selfwear.co/impressum.html">Impressum</a></span>
+  <div class="shell row">
+    <div class="sig" style="display:flex;align-items:center;gap:12px">
+      <svg viewBox="0 0 316 40" xmlns="http://www.w3.org/2000/svg" class="footer-mark" role="img" aria-label="Selfwear">
+        <text x="0" y="31" font-family="'Archivo Black','Archivo',sans-serif" font-weight="900" font-size="34" letter-spacing="-0.5" fill="#E60005">SELFWEAR</text>
+      </svg>
+      <span><em>SELFWEAR<sup>&#174;</sup></em> &mdash; Clothes That Love You.</span>
+    </div>
+    <a class="legal-link" href="impressum.html">Impressum</a>
   </div>
 </footer>
 
